@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link REL="SHORTCUT ICON"  HREF="image/coffee-cup.ico.png">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="dangnhap.cafe.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="script2.js"></script>
+
+</head>
+
+<body>
+    <section>
+        <div class="img-bg">
+            <img src="image/24.1.png"
+                alt="Hình Ảnh Minh Họa">
+        </div>
+        <div class="noi-dung">
+            <div class="form">
+                <h2>Đăng Nhập</h2>
+                <form action="" id="form">
+                    <div class="input-form">
+                        <span>Tài khoản</span>
+                       <input type="text" name="na" id="username" value=""/>
+                       <p style="color: red"></p>
+                    </div>
+                    <div class="input-form">
+                        <span>Mật Khẩu</span>
+        
+                        <input type="password" name="pa" id="pass2"value=""/>
+                        <p style="color: red"></p>
+                    </div>
+                    <div class="nho-dang-nhap">
+                        <label><input type="checkbox" name=""> Nhớ Đăng Nhập</label>
+                    </div>
+                    <div class="input-form">
+                        <center><a style="text-decoration: none;" href="" ><h2>Đăng nhập</h2></a></center>
+                    </div>
+                    <div class="input-form">
+                        <p>Bạn Chưa Có Tài Khoản? <a href="dangky.html" >Đăng Ký</a></p>
+                    </div>
+                </form>
+                <script>
+                    Validator({
+                        form:'#form',
+                     rules:[ Validator.isRequired('#username','Fill username pls'), 
+                     Validator.isRequired('#pass2','pls fill password'),
+                         ]
+
+                    })
+                </script>
+                <h3>Đăng Nhập Bằng Mạng Xã Hội</h3>
+                <ul class="icon-dang-nhap">
+                    <button class="fa fa-facebook" aria-hidden="true"></button>
+                    <button class="fa fa-google" aria-hidden="true"></button>
+                    <button class="fa fa-twitter" aria-hidden="true"></button>
+                </ul>
+            </div>
+          
+        </div>
+    </section>
+</body>
+
+</html>

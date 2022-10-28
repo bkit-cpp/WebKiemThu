@@ -1,0 +1,1067 @@
+/* RESPONSIVE TABLE - GIAO DIỆN MÁY TÍNH BẢNG */
+@media only screen and (min-width: 769px) and (max-width: 888px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 50%;
+  }
+
+  .content-left {
+    width: 100%;
+  }
+
+  .content-right {
+    width: 550px;
+    margin: 28px auto;
+  }
+
+  .large-heading {
+    text-align: center;
+  }
+
+  .header .topbar {
+    width: 100%;
+    padding: 0 35px;
+  }
+
+  .header .nav-menu {
+    width: 97%;
+  }
+
+  .header .nav-menu__logo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .header .nav-menu__logo-image {
+    position: absolute;
+    top: 13%;
+    left: 12%;
+    width: 106px;
+  }
+
+  .header .header-group {
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    width: 80px;
+    display: none;
+  }
+  
+  .header .header-group__border {
+    font-size: 16px;
+    padding: 0 2px;
+  }
+
+  .header .header-group__number {
+    right: 15px;
+  }
+
+  .wallpaper {
+    top: -38px;
+  }
+
+  .section {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .section .content-desc {
+    padding: 0 36px;
+  }
+
+  .section .section-image {
+    width: 100%;
+  }
+
+  .menu .menu-list {
+    padding: 0 24px;
+  }
+
+  .menu .menu-main {
+    width: 69%;
+  }
+
+  .menu .menu-group__title {
+    font-size: 18px;
+  }
+  .menu .menu-group__price::before {
+    content: " ............... ";
+    display: none;
+  }
+
+  .gallery .gallery-container {
+    grid-template-columns: auto auto;
+    margin: auto;
+  }
+
+  .gallery .item2, .item5 {
+    grid-column: 1/3;
+  }
+
+  .gallery .item1 {
+    grid-column: 1/3;
+  }
+
+  .form {
+    background-image: none;
+    background-color: #f5f6f8;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .form-today {
+    padding: 40px 0;
+  }
+
+  .form-today__days-time {
+    padding: 20px 0;
+  }
+
+  .form .form-place {
+    padding: 35px 0;
+    width: 100%;
+  }
+
+  .form .form-place__title {
+    font-size: 24px;
+  }
+
+  .news {
+    justify-content: space-around;
+  }
+
+  .news .news-content {
+    flex-basis: 40%;
+  }
+
+  .newspaper .news-content__image {
+    width: 100%;
+  }
+
+  .newspaper .news-main {
+    width: 100%;
+    padding: 0;
+  }
+
+  .newspaper .news-content__icon {
+    margin: none;
+    padding: 18px 0 0;
+  }
+
+  .service .service-main__content {
+    width: 100%;
+  }
+
+  .footer {
+    background-image: none;
+    background-color: #252525;
+  }
+
+  .footer .footer-main {
+    padding-top: 30px;
+    flex-direction: row;
+  }
+
+  .footer .footer-main__map {
+    width: 50%;
+    height: 530px;
+    padding: 15px;
+  }
+
+  .footer .footer-wraper-1 {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .footer .footer-list__title, .footer-address {
+    font-size: 1em;
+  }
+
+  .footer .footer-desc {
+    /* display: none; */
+    font-size: 19px;
+  }
+
+  .footer .copyright {
+    justify-content: center;
+  }
+
+  .footer .copyright-mobile-1 {
+    display: none;
+  }
+
+  .footer .copyright-mobile-2 {
+    display: block;
+  }
+
+  .footer .copyright .top {
+    display: none;
+  }
+
+  .footer .copyright-main {
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 20px;
+  }
+  
+
+}
+
+@media only screen and (min-width:889px) and (max-width: 970px) {
+
+  .col {
+    width: 50%;
+  }
+
+  .content-left {
+    width: 50%;
+  }
+
+  .content-right {
+    width: 50%;
+  }
+
+  .large-heading {
+    text-align: center;
+  }
+
+  .header .topbar {
+    width: 100%;
+    padding: 0 35px;
+  }
+
+  .header .nav-menu {
+    width: 97%;
+  }
+
+  .header .nav-menu__logo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .header .nav-menu__logo-image {
+    position: absolute;
+    top: 13%;
+    left: 12%;
+    width: 106px;
+  }
+
+  .header .header-group {
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    width: 80px;
+  }
+  
+  .header .header-group__border {
+    font-size: 16px;
+    padding: 0 2px;
+  }
+
+  .header .header-group__number {
+    right: 15px;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .section .content-desc {
+    padding: 0 36px;
+  }
+
+  .section .section-image {
+    width: 100%;
+  }
+
+  .menu .menu-list {
+    padding: 0 24px;
+  }
+
+  .menu .menu-main {
+    width: 69%;
+  }
+
+  .menu .menu-group__price::before {
+    content: " ............... ";
+  }
+
+  .gallery .gallery-container {
+    grid-template-columns: 412px 178px 178px;
+    margin: auto;
+  }
+
+  .form {
+    background-image: none;
+    background-color: #f5f6f8;
+    padding: 100px 24px;
+  }
+
+  .form .form-today {
+    width: 40%;
+  }
+
+  .form .form-place {
+    padding: 31px 23px;
+    width: 60%;
+  }
+
+  .news {
+    justify-content: space-around;
+  }
+
+  .news .news-content {
+    flex-basis: 420px;
+  }
+
+  .newspaper .news-content__image {
+    width: 100%;
+  }
+
+  .newspaper .news-main {
+    width: 100%;
+    padding: 0;
+  }
+
+  .newspaper .news-content__icon {
+    margin: none;
+    padding: 18px 0 0;
+  }
+
+  .service .service-main__content {
+    width: 100%;
+  }
+
+  .footer {
+    background-image: none;
+    background-color: #252525;
+  }
+
+  .footer .footer-main {
+    padding-top: 30px;
+    flex-direction: row;
+  }
+
+  .footer .footer-main__map {
+    width: 50%;
+    height: 530px;
+    padding: 15px;
+  }
+
+  .footer .footer-wraper-1 {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .footer .footer-list__title, .footer-address {
+    font-size: 1em;
+  }
+
+  .footer .footer-desc {
+    /* display: none; */
+    font-size: 19px;
+  }
+
+  .footer .copyright {
+    justify-content: center;
+  }
+
+  .footer .copyright-mobile-1 {
+    display: none;
+  }
+
+  .footer .copyright-mobile-2 {
+    display: block;
+  }
+
+  .footer .copyright .top {
+    display: none;
+  }
+
+  .footer .copyright-main {
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 20px;
+  }
+
+}
+
+
+/* RESPONSIVE MOBILE - GIAO DIỆN ĐIỆN THOẠI */
+@media only screen and (max-width: 768px) {
+  .large-heading {
+    font-size: 26px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .header .nav-menu{
+    width: 100%;
+    border-radius: initial;
+  }
+
+  .header .nav-menu .nav-menu-items {
+    position: absolute;
+    left: 0.4rem;
+  }
+
+  .header .topbar {
+    display: none;
+  }
+
+  .header .nav-menu {
+    height: 140px;
+  }
+
+  .header .header-group {
+    right: 26%;
+    padding: 0;
+    display: none;
+  }
+
+  .nav-menu .nav-menu-bars {
+    display: block;
+  }
+  
+  .nav-menu .nav-mobile {
+    display: block;
+  }
+
+  .nav-menu .nav-menu-items:not(:first-child){
+    display: none;
+  }
+
+  .wallpaper {
+    top: 0;
+  }
+
+  .section {
+    padding-bottom: 55px;
+    margin-top: 50px;
+  }
+
+  .section .content-left {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .section .content-right {
+    margin-top: 28px;
+  }
+
+  .section .section-image {
+    width: 100%;
+  }
+
+  .section .section-times::after {
+    top: 63px;
+  }
+
+  .menu .menu-content__list {
+    display: none;
+  }
+
+  .menu .menu-content__mobile {
+    display: block;
+    padding: 20px 20px;
+    border-radius: 0;
+  }
+
+  .menu .menu-list {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .menu .menu-main {
+    width: 88%;
+  }
+
+  .menu .menu-group__title {
+    font-size: 19px;
+  }
+
+  .menu .menu-group__price {
+    position: inherit;
+  }
+
+  .menu .menu-group__price::before {
+    display: none;
+  }
+
+  .menu .menu-list__left {
+    width: 75%;
+  }
+
+  .gallery {
+    padding: 6px 0;
+    margin-top: 50px;
+  }
+
+  .gallery .gallery-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 25px;
+  }
+  
+  .item1 {
+     grid-area: 1 / span 2 / 1 / 3;
+  }
+  
+  .gallery .item2, .item3, .item4, .item5 {
+    width: 100%;
+  }
+
+  .gallery .item1 {
+    width: 100%;
+  }
+
+  #menuToggle {
+    display: block;
+  }
+  
+  .silder {
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .form {
+    background-image: none;
+    background-color: #f5f6f8;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .form-today {
+    padding: 40px 0;
+  }
+
+  .form-today__days-time {
+    padding: 20px 0;
+  }
+
+  .form .form-place {
+    padding: 35px 0;
+    width: 100%;
+  }
+
+  .form .form-place__title {
+    font-size: 24px;
+  }
+
+  .col {
+    padding: 0 15px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .newspaper {
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .news .news-content {
+    padding: 40px 16px;
+  }
+
+  .newspaper .large-heading {
+    margin: 0;
+  }
+
+  .newspaper .news-content__image {
+    width: 100%;
+  }
+
+  .newspaper .news-main {
+    padding: 21px 0;
+    width: 100%;
+  }
+
+  .newspaper .news-content__title {
+    font-size: 25px;
+  }
+
+  .service .service-wrapper {
+    flex-direction: column;
+  }
+
+  .service .service-main__content {
+    width: 100%;
+    height: 116px;
+  }
+
+  .footer {
+    background-image: none;
+    background-color: #252525;
+  }
+
+  .footer .footer-main {
+    padding-top: 16px;
+    flex-direction: column;
+  }
+
+  .footer .footer-main__map {
+    width: 100%;
+    height: 305px;
+    padding: 15px;
+  }
+
+  .footer .footer-wraper-1 {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .footer .footer-list {
+    width: 100%;
+  }
+
+  .footer .footer-list__title, .footer-address {
+    font-size: 1em;
+  }
+
+  .footer .footer-desc {
+    display: none;
+  }
+
+  .footer .copyright {
+    justify-content: center;
+  }
+
+  .footer .copyright-mobile-1 {
+    display: none;
+  }
+
+  .footer .copyright-mobile-2 {
+    display: block;
+  }
+
+  .footer .copyright .top {
+    display: none;
+  }
+
+  .footer .copyright-main {
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 20px;
+  }
+  
+}
+
+
+@media only screen and (min-width: 971px) and (max-width: 1190px) {
+  .col {
+    width: 50%;
+  }
+
+  .content-left {
+    width: 50%;
+  }
+
+  .content-right {
+    width: 50%;
+  }
+
+  .large-heading {
+    text-align: center;
+  }
+
+  .header .topbar {
+    width: 100%;
+    padding: 0 35px;
+  }
+
+  .header .nav-menu {
+    width: 97%;
+  }
+
+  .header .nav-menu__logo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .header .nav-menu__logo-image {
+    position: absolute;
+    top: 13%;
+    left: 12%;
+    width: 106px;
+  }
+
+  .header .header-group {
+    position: absolute;
+    top: 50%;
+    padding: 0;
+    width: 80px;
+  }
+  
+  .header .header-group__border {
+    font-size: 16px;
+    padding: 0 2px;
+  }
+
+  .header .header-group__number {
+    right: 15px;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .section .content-desc {
+    padding: 0 36px;
+  }
+
+  .section .section-image {
+    width: 100%;
+  }
+
+  .menu .menu-list {
+    padding: 0 24px;
+  }
+
+  .menu .menu-main {
+    width: 69%;
+  }
+
+  .menu .menu-group__price::before {
+    content: " ............... ";
+  }
+
+  .gallery .gallery-container {
+    grid-template-columns: 455px 212px 212px;
+    margin: auto;
+  }
+
+  .form {
+    background-image: none;
+    background-color: #f5f6f8;
+    padding: 100px 24px;
+  }
+
+  .form .form-today {
+    width: 40%;
+  }
+
+  .form .form-place {
+    padding: 31px 23px;
+    width: 60%;
+  }
+
+  .news {
+    justify-content: space-around;
+  }
+
+  .news .news-content {
+    flex-basis: 420px;
+  }
+
+  .newspaper .news-content__image {
+    width: 100%;
+  }
+
+  .newspaper .news-main {
+    width: 100%;
+    padding: 0;
+  }
+
+  .newspaper .news-content__icon {
+    margin: none;
+    padding: 18px 0 0;
+  }
+
+  .service .service-main__content {
+    width: 100%;
+  }
+
+  .footer {
+    background-image: none;
+    background-color: #252525;
+  }
+
+  .footer .footer-main {
+    padding-top: 30px;
+    flex-direction: row;
+  }
+
+  .footer .footer-main__map {
+    width: 50%;
+    height: 530px;
+    padding: 15px;
+  }
+
+  .footer .footer-wraper-1 {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .footer .footer-list__title, .footer-address {
+    font-size: 1em;
+  }
+
+  .footer .footer-desc {
+    /* display: none; */
+    font-size: 19px;
+  }
+
+  .footer .copyright {
+    justify-content: center;
+  }
+
+  .footer .copyright-mobile-1 {
+    display: none;
+  }
+
+  .footer .copyright-mobile-2 {
+    display: block;
+  }
+
+  .footer .copyright .top {
+    display: none;
+  }
+
+  .footer .copyright-main {
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 20px;
+  }
+
+}
+
+
+/* RESPONSIVE MOBILE - GIAO DIỆN ĐIỆN THOẠI */
+@media only screen and (max-width: 768px) {
+  .large-heading {
+    font-size: 26px;
+  }
+
+
+  .container {
+    flex-direction: column;
+  }
+
+  .header .topbar {
+    display: none;
+  }
+
+  .header .nav-menu {
+    height: 140px;
+  }
+
+  .header .header-group {
+    right: 26%;
+    padding: 0;
+    display: none;
+  }
+
+  .wallpaper {
+    top: 0;
+  }
+  .section {
+    padding-bottom: 55px;
+    margin-top: 50px;
+  }
+
+  .section .content-left {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .section .content-right {
+    margin-top: 28px;
+  }
+
+  .section .section-image {
+    width: 100%;
+  }
+
+  .section .section-times::after {
+    top: 63px;
+  }
+
+  .menu .menu-content__list {
+    display: none;
+  }
+
+  .menu .menu-content__mobile {
+    display: block;
+    padding: 20px 20px;
+    border-radius: 0;
+  }
+
+  .menu .menu-list {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .menu .menu-main {
+    width: 88%;
+  }
+
+  .menu .menu-group__title {
+    font-size: 19px;
+  }
+
+  .menu .menu-group__price {
+    position: inherit;
+  }
+
+  .menu .menu-group__price::before {
+    display: none;
+  }
+
+  .menu .menu-list__left {
+    width: 75%;
+  }
+
+  .gallery {
+    padding: 6px 0;
+    margin-top: 50px;
+  }
+
+  .gallery .gallery-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 25px;
+    /* padding: 10px; */
+  }
+  
+  .item1 { grid-area: 1 / span 2 / 1 / 3; }
+  
+  .gallery .item2, .item3, .item4, .item5 {
+    width: 100%;
+  }
+
+  .gallery .item1 {
+    width: 100%;
+  }
+
+  #menuToggle {
+    display: block;
+  }
+
+   .silder {
+      padding: 0;
+      margin-top: 50px;
+   }
+
+  .form {
+    background-image: none;
+    background-color: #f5f6f8;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .form-today {
+    padding: 40px 0;
+  }
+
+  .form-today__days-time {
+    padding: 20px 0;
+  }
+
+  .form .form-place {
+    padding: 35px 0;
+    width: 100%;
+  }
+
+  .form .form-place__title {
+    font-size: 24px;
+  }
+
+  .col {
+    padding: 0 15px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .newspaper {
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .news .news-content {
+    padding: 40px 16px;
+  }
+
+  .newspaper .large-heading {
+    margin: 0;
+  }
+
+  .newspaper .news-content__image {
+    width: 100%;
+  }
+
+  .newspaper .news-main {
+    padding: 21px 0;
+    width: 100%;
+  }
+
+  .newspaper .news-content__title {
+    font-size: 25px;
+  }
+
+  .service .service-wrapper {
+    flex-direction: column;
+  }
+
+  .service .service-main__content {
+    width: 100%;
+    height: 116px;
+  }
+
+  .footer {
+    background-image: none;
+    background-color: #252525;
+  }
+
+  .footer .footer-main {
+    padding-top: 16px;
+    flex-direction: column;
+  }
+
+  .footer .footer-main__map {
+    width: 100%;
+    height: 305px;
+    padding: 15px;
+  }
+
+  .footer .footer-wraper-1 {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .footer .footer-list__title, .footer-address {
+    font-size: 1em;
+  }
+
+  .footer .footer-desc {
+    display: none;
+  }
+
+  .footer .copyright {
+    justify-content: center;
+  }
+
+  .footer .copyright-mobile-1 {
+    display: none;
+  }
+
+  .footer .copyright-mobile-2 {
+    display: block;
+  }
+
+  .footer .copyright .top {
+    display: none;
+  }
+
+  .footer .copyright-main {
+    text-align: center;
+    line-height: 1.8;
+    padding: 0 20px;
+  }
+}
