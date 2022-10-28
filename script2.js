@@ -37,7 +37,7 @@
         }
       });
       if(isFormValid){
-      window.location="http://localhost:5500/";
+      window.location="https://bkit-cpp.github.io/WebKiemThu/";
       }
       else{
       
