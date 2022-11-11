@@ -36,17 +36,17 @@ function dangnhap(e){
   event.preventDefault();
   var username=document.getElementById('username').value;
   var pass=document.getElementById('pass2').value;
-  var pass3=document.getElementById('pass3').value;
   var user=localStorage.getItem(username);
   var data=JSON.parse(user);
   console.log(data);
-  if(username==''||pass==''||pass3=='')
+  if(username==''||pass=='')
   {
     alert("Please fill these blank");
     window.location.href="http://localhost:5500/dangnhap.html";
   }
-  else if(username==data.username&& pass==data.password && pass3==data.password)
+  else if(username==data.username&& pass==data.password )
   {
+    alert("Dang Nhap Thanh Cong");
     window.location.href="http://localhost:5500/";
     }
     else if(username!=data.username){
