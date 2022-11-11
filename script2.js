@@ -1,95 +1,57 @@
+function dangky(e)
+{
+  event.preventDefault();
+  var username=document.getElementById('username').value;
+  var pass=document.getElementById('pass').value;
+  var pass2=document.getElementById('repass').value;
 
+  if(username==''||pass==''||pass2=='')
+  {
+    alert("Please fill thes blank"); 
+  }
+ 
+  else if(pass!=pass2)
+  {
+    alert("pass and repass is as same");
+   
+  }
+  else if(pass.length<6||pass2.length<6)
+  {
+    alert("up to 6 characters required");
+  }
+  else{
+  var user={
+username: username,
+password: pass,
+pass2: repass,
+  };
+  var json=JSON.stringify(user);
+  localStorage.setItem(username,json);
+  console.log('user added');
+  window.location.href="http://localhost:5500/dangnhap.html";
+}
   
-  
-  function Validator(options) {
-    var selectorRule={};
-    function validate(inputElement,rule) {
-      var errorElement=inputElement.parentElement.querySelector('.input-form p');
-      var errorMessage;
-         var rules=selectorRule[rule.selector];
-        for(var i=0;i<rules.length;i++){
-          errorMessage=rules[i](inputElement.value);
-          if(errorMessage) break;
-        }
-          if(errorMessage)
-          {
-            errorElement.innerText=errorMessage;
-            inputElement.parentElement.classList.add('invalid');
-          }
-          else{
-            errorElement.innerText='';
-            inputElement.parentElement.classList.remove('invalid');
-          }
-       return !errorMessage;
+}
+function dangnhap(e){
+  event.preventDefault();
+  var username=document.getElementById('username').value;
+  var pass=document.getElementById('pass2').value;
+  var pass3=document.getElementById('pass3').value;
+  var user=localStorage.getItem(username);
+  var data=JSON.parse(user);
+  console.log(data);
+  if(username==''||pass==''||pass3=='')
+  {
+    alert("Please fill these blank");
+    window.location.href="http://localhost:5500/dangnhap.html";
+  }
+  else if(username==data.username&& pass==data.password && pass3==data.password)
+  {
+    window.location.href="http://localhost:5500/";
     }
-   var formelement=document.querySelector(options.form);
-  
-   if(formelement)
-   {
-    formelement.onclick = function(e){
-      e.preventDefault();
-      var isFormValid=true;
-      options.rules.forEach(function(rule){
-        var inputElement=formelement.querySelector(rule.selector);
-        var isValid=validate(inputElement,rule);
-        if(!isValid){
-          isFormValid=false;
-        }
-      });
-      if(isFormValid){
-      window.location="https://bkit-cpp.github.io/WebKiemThu/";
-      }
-      else{
-      
-      }
-      
+    else if(username!=data.username){
+      alert("Dang Nhap That Bai");
     }
-    options.rules.forEach(function(rule){
-     if(Array.isArray(selectorRule[rule.selector]))
-     {
-      selectorRule[rule.selector].push(rule.test);
-     }
-     else{
-      selectorRule[rule.selector]=[rule.test];
-     }
-     var inputElement=formelement.querySelector(rule.selector);
-     
-      if(inputElement)
-      {
-        inputElement.onblur=function(){
-          validate(inputElement,rule);
-          
-        }
-      }
-    });
-   console.log(selectorRule);
-   }
-  }
-  Validator.isRequired = function(selector,message){
-   return{
-    selector:selector,
-    test:function(value){
-       return value.trim() ? undefined : message||'The username is blank'
-    }
-   };
-  }
-  Validator.minlenght = function(selector,min,message){
-    return{
-      selector:selector,
-      test:function(value){
-  return value.length >= min? undefined : message||'The pass is so short, min is';
-      }
-     };
-  }
-  Validator.isPasswordConfirm = function(selector,getConfirmValue,message){
-    return{
-      selector:selector,
-      test:function(value){
-        return value===getConfirmValue()? undefined : message|| 'The confirm value is error';
-      }
-     };
-  }
-
-  
-  
-  
+ 
+ 
+}
